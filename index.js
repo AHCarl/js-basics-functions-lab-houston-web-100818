@@ -15,9 +15,13 @@ function distanceTravelledInFeet(start, end) {
 }
 
 function calculatesFarePrice(start, end) {
-  let msg;
+  let price;
   let howFar = distanceFromHqInFeet(start, end);
   if (howFar <= 400) {
-    msg = 
+    price = 0;
+  } else if (howFar <= 2000) {
+    price = 0.02 * (howFar - 400)
+  } else if (howFar <= 2500) {
+    price = 
   }
 }
