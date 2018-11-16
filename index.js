@@ -13,3 +13,11 @@ function distanceFromHqInFeet(blocks) {
 function distanceTravelledInFeet(start, end) {
   return Math.abs(end - start) * blockFeet
 }
+
+function calculatesFarePrice(start, end) {
+  let msg;
+  let howFar = distanceFromHqInFeet(start, end);
+  if (howFar <= 400) {
+    msg = 
+  }
+}
