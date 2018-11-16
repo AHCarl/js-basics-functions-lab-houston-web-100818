@@ -20,7 +20,7 @@ function calculatesFarePrice(start, end) {
   if (howFar <= 400) {
     price = 0;
   } else if (howFar <= 2000) {
-    price = (0.02 * howFar) - (.02 * 400);
+    price = (howFar - 400) * 0.02;
   } else if (howFar <= 2500) {
     price = 25;
   } else {
